@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8459C84B2A4C5F1A00B82CE8 /* MusicVerseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C84A2A4C5F1A00B82CE8 /* MusicVerseApp.swift */; };
+		8459C84D2A4C5F1A00B82CE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C84C2A4C5F1A00B82CE8 /* ContentView.swift */; };
+		8459C84F2A4C5F1B00B82CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8459C84E2A4C5F1B00B82CE8 /* Assets.xcassets */; };
+		8459C8522A4C5F1B00B82CE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8459C8512A4C5F1B00B82CE8 /* Preview Assets.xcassets */; };
+		8459C85A2A4C60B100B82CE8 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C8592A4C60B100B82CE8 /* OnboardingPageView.swift */; };
+		8459C85C2A4C61D100B82CE8 /* OnboardingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C85B2A4C61D100B82CE8 /* OnboardingPageViewModel.swift */; };
+		8459C8642A4C7CE900B82CE8 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 8459C8632A4C7CE900B82CE8 /* swiftgen.yml */; };
+		8459C86A2A4D74BB00B82CE8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8459C86C2A4D74BB00B82CE8 /* Localizable.strings */; };
+		8459C8702A4D74FD00B82CE8 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C86E2A4D74FD00B82CE8 /* Assets.swift */; };
+		8459C8712A4D74FD00B82CE8 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C86F2A4D74FD00B82CE8 /* Strings.swift */; };
+		8459C87F2A4D768E00B82CE8 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C87E2A4D768E00B82CE8 /* Font.swift */; };
+		8459C8822A4D786C00B82CE8 /* FontFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C8812A4D786C00B82CE8 /* FontFamily.swift */; };
+		8459C8852A4D79E100B82CE8 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8459C8842A4D79E100B82CE8 /* AppFont.swift */; };
+		8459C8862A4D7C6600B82CE8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8459C8612A4C6E9C00B82CE8 /* Colors.xcassets */; };
+		8459C8872A4D876400B82CE8 /* YsabeauOffice-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8459C8762A4D764800B82CE8 /* YsabeauOffice-Bold.ttf */; };
+		8459C8882A4D876400B82CE8 /* YsabeauOffice-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8459C8752A4D764800B82CE8 /* YsabeauOffice-Light.ttf */; };
+		8459C8892A4D876400B82CE8 /* YsabeauOffice-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8459C8742A4D764800B82CE8 /* YsabeauOffice-Italic.ttf */; };
+		8459C88A2A4D876400B82CE8 /* YsabeauOffice-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8459C8732A4D764800B82CE8 /* YsabeauOffice-Medium.ttf */; };
+		8459C88B2A4D876400B82CE8 /* YsabeauOffice-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8459C8772A4D764800B82CE8 /* YsabeauOffice-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8459C8472A4C5F1A00B82CE8 /* MusicVerse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVerse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8459C84A2A4C5F1A00B82CE8 /* MusicVerseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVerseApp.swift; sourceTree = "<group>"; };
+		8459C84C2A4C5F1A00B82CE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8459C84E2A4C5F1B00B82CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8459C8512A4C5F1B00B82CE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8459C8592A4C60B100B82CE8 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		8459C85B2A4C61D100B82CE8 /* OnboardingPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewModel.swift; sourceTree = "<group>"; };
+		8459C8612A4C6E9C00B82CE8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		8459C8632A4C7CE900B82CE8 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		8459C86B2A4D74BB00B82CE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8459C86E2A4D74FD00B82CE8 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		8459C86F2A4D74FD00B82CE8 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		8459C8732A4D764800B82CE8 /* YsabeauOffice-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauOffice-Medium.ttf"; path = "../../../../../../../Downloads/Ysabeau_Office/static/YsabeauOffice-Medium.ttf"; sourceTree = "<group>"; };
+		8459C8742A4D764800B82CE8 /* YsabeauOffice-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauOffice-Italic.ttf"; path = "../../../../../../../Downloads/Ysabeau_Office/static/YsabeauOffice-Italic.ttf"; sourceTree = "<group>"; };
+		8459C8752A4D764800B82CE8 /* YsabeauOffice-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauOffice-Light.ttf"; path = "../../../../../../../Downloads/Ysabeau_Office/static/YsabeauOffice-Light.ttf"; sourceTree = "<group>"; };
+		8459C8762A4D764800B82CE8 /* YsabeauOffice-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauOffice-Bold.ttf"; path = "../../../../../../../Downloads/Ysabeau_Office/static/YsabeauOffice-Bold.ttf"; sourceTree = "<group>"; };
+		8459C8772A4D764800B82CE8 /* YsabeauOffice-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "YsabeauOffice-Regular.ttf"; path = "../../../../../../../Downloads/Ysabeau_Office/static/YsabeauOffice-Regular.ttf"; sourceTree = "<group>"; };
+		8459C87E2A4D768E00B82CE8 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		8459C8812A4D786C00B82CE8 /* FontFamily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontFamily.swift; sourceTree = "<group>"; };
+		8459C8842A4D79E100B82CE8 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8459C8442A4C5F1A00B82CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8459C83E2A4C5F1A00B82CE8 = {
+			isa = PBXGroup;
+			children = (
+				8459C8632A4C7CE900B82CE8 /* swiftgen.yml */,
+				8459C8492A4C5F1A00B82CE8 /* MusicVerse */,
+				8459C8482A4C5F1A00B82CE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8459C8482A4C5F1A00B82CE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8459C8472A4C5F1A00B82CE8 /* MusicVerse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8459C8492A4C5F1A00B82CE8 /* MusicVerse */ = {
+			isa = PBXGroup;
+			children = (
+				8459C8832A4D79CC00B82CE8 /* ViewModifier */,
+				8459C87D2A4D768100B82CE8 /* Fonts */,
+				8459C8602A4C6E8900B82CE8 /* Resources */,
+				8459C8582A4C609400B82CE8 /* OnboardingPage */,
+				8459C84A2A4C5F1A00B82CE8 /* MusicVerseApp.swift */,
+				8459C84C2A4C5F1A00B82CE8 /* ContentView.swift */,
+				8459C8502A4C5F1B00B82CE8 /* Preview Content */,
+			);
+			path = MusicVerse;
+			sourceTree = "<group>";
+		};
+		8459C8502A4C5F1B00B82CE8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8459C8512A4C5F1B00B82CE8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8459C8582A4C609400B82CE8 /* OnboardingPage */ = {
+			isa = PBXGroup;
+			children = (
+				8459C8592A4C60B100B82CE8 /* OnboardingPageView.swift */,
+				8459C85B2A4C61D100B82CE8 /* OnboardingPageViewModel.swift */,
+			);
+			path = OnboardingPage;
+			sourceTree = "<group>";
+		};
+		8459C8602A4C6E8900B82CE8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8459C8722A4D761B00B82CE8 /* Fonts */,
+				8459C86E2A4D74FD00B82CE8 /* Assets.swift */,
+				8459C86F2A4D74FD00B82CE8 /* Strings.swift */,
+				8459C84E2A4C5F1B00B82CE8 /* Assets.xcassets */,
+				8459C8612A4C6E9C00B82CE8 /* Colors.xcassets */,
+				8459C86C2A4D74BB00B82CE8 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8459C8722A4D761B00B82CE8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8459C8762A4D764800B82CE8 /* YsabeauOffice-Bold.ttf */,
+				8459C8742A4D764800B82CE8 /* YsabeauOffice-Italic.ttf */,
+				8459C8752A4D764800B82CE8 /* YsabeauOffice-Light.ttf */,
+				8459C8732A4D764800B82CE8 /* YsabeauOffice-Medium.ttf */,
+				8459C8772A4D764800B82CE8 /* YsabeauOffice-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8459C87D2A4D768100B82CE8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8459C87E2A4D768E00B82CE8 /* Font.swift */,
+				8459C8812A4D786C00B82CE8 /* FontFamily.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8459C8832A4D79CC00B82CE8 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				8459C8842A4D79E100B82CE8 /* AppFont.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8459C8462A4C5F1A00B82CE8 /* MusicVerse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8459C8552A4C5F1B00B82CE8 /* Build configuration list for PBXNativeTarget "MusicVerse" */;
+			buildPhases = (
+				8459C8432A4C5F1A00B82CE8 /* Sources */,
+				8459C8442A4C5F1A00B82CE8 /* Frameworks */,
+				8459C8452A4C5F1A00B82CE8 /* Resources */,
+				8459C8662A4C7FBA00B82CE8 /* Run Swiftgen */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusicVerse;
+			productName = MusicVerse;
+			productReference = 8459C8472A4C5F1A00B82CE8 /* MusicVerse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8459C83F2A4C5F1A00B82CE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8459C8462A4C5F1A00B82CE8 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 8459C8422A4C5F1A00B82CE8 /* Build configuration list for PBXProject "MusicVerse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8459C83E2A4C5F1A00B82CE8;
+			productRefGroup = 8459C8482A4C5F1A00B82CE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8459C8462A4C5F1A00B82CE8 /* MusicVerse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8459C8452A4C5F1A00B82CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8459C8872A4D876400B82CE8 /* YsabeauOffice-Bold.ttf in Resources */,
+				8459C8862A4D7C6600B82CE8 /* Colors.xcassets in Resources */,
+				8459C88B2A4D876400B82CE8 /* YsabeauOffice-Regular.ttf in Resources */,
+				8459C86A2A4D74BB00B82CE8 /* Localizable.strings in Resources */,
+				8459C88A2A4D876400B82CE8 /* YsabeauOffice-Medium.ttf in Resources */,
+				8459C8522A4C5F1B00B82CE8 /* Preview Assets.xcassets in Resources */,
+				8459C84F2A4C5F1B00B82CE8 /* Assets.xcassets in Resources */,
+				8459C8892A4D876400B82CE8 /* YsabeauOffice-Italic.ttf in Resources */,
+				8459C8882A4D876400B82CE8 /* YsabeauOffice-Light.ttf in Resources */,
+				8459C8642A4C7CE900B82CE8 /* swiftgen.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8459C8662A4C7FBA00B82CE8 /* Run Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftgen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftgen >/dev/null; then\n  swiftgen config run --config ${PROJECT_DIR}/swiftgen.yml\nelse\n  echo \"warning: SwiftGen not installed\"\nfi \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8459C8432A4C5F1A00B82CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8459C85C2A4C61D100B82CE8 /* OnboardingPageViewModel.swift in Sources */,
+				8459C85A2A4C60B100B82CE8 /* OnboardingPageView.swift in Sources */,
+				8459C8852A4D79E100B82CE8 /* AppFont.swift in Sources */,
+				8459C87F2A4D768E00B82CE8 /* Font.swift in Sources */,
+				8459C8702A4D74FD00B82CE8 /* Assets.swift in Sources */,
+				8459C8822A4D786C00B82CE8 /* FontFamily.swift in Sources */,
+				8459C84D2A4C5F1A00B82CE8 /* ContentView.swift in Sources */,
+				8459C84B2A4C5F1A00B82CE8 /* MusicVerseApp.swift in Sources */,
+				8459C8712A4D74FD00B82CE8 /* Strings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8459C86C2A4D74BB00B82CE8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8459C86B2A4D74BB00B82CE8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8459C8532A4C5F1B00B82CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8459C8542A4C5F1B00B82CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8459C8562A4C5F1B00B82CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MusicVerse/Preview Content\"";
+				DEVELOPMENT_TEAM = L794397534;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.music.verse.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8459C8572A4C5F1B00B82CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MusicVerse/Preview Content\"";
+				DEVELOPMENT_TEAM = L794397534;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.music.verse.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8459C8422A4C5F1A00B82CE8 /* Build configuration list for PBXProject "MusicVerse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8459C8532A4C5F1B00B82CE8 /* Debug */,
+				8459C8542A4C5F1B00B82CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8459C8552A4C5F1B00B82CE8 /* Build configuration list for PBXNativeTarget "MusicVerse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8459C8562A4C5F1B00B82CE8 /* Debug */,
+				8459C8572A4C5F1B00B82CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8459C83F2A4C5F1A00B82CE8 /* Project object */;
+}

@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  MusicVerse
+
+  Created by Bogdan Petkanitch on 29.06.2023.
+  
+*/
+
+"Continue" = "Continue";
+"Skip" = "Skip";
+
+"OnboardingPage.firstPage.title" = "Powerfull equlizer";
+"OnboardingPage.firstPage.subtitle" = "You can personalize the sound music for you";
+
+"OnboardingPage.secondPage.title" = "Play music without connection";
+"OnboardingPage.secondPage.subtitle" = "You could download music to local storage from download folder";
+
+"OnboardingPage.thirdPage.title" = "Grouping music";
+"OnboardingPage.thirdPage.subtitle" = "You could group music by playlist";
+
+"OnboardingPage.fourthPage.title" = "Audio Visualizer";
+"OnboardingPage.fourthPage.subtitle" = "Audio will be rendered in various waveforms";
