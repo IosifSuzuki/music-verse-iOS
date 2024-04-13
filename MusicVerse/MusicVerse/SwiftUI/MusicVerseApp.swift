@@ -24,7 +24,7 @@ struct MusicVerseApp: App {
       Group {
         switch appRootManager.currentRoot {
         case .onboarding:
-          ContentView()
+          OnboardingView()
         case .main:
           AudioPlayerRepresentable()
             .ignoresSafeArea()

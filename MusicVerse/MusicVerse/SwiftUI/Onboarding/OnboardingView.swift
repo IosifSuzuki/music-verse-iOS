@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  OnboardingView.swift
 //  MusicVerse
 //
 //  Created by Bogdan Petkanitch on 28.06.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct OnboardingView: View {
   
   var viewModels: [OnboardingPageViewModel] = [
     .init(
@@ -71,6 +71,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    OnboardingView()
   }
 }
