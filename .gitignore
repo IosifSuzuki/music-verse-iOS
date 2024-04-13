@@ -101,3 +101,5 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode
+
+/MusicVerse/MusicVerse/Resources/Musics/
