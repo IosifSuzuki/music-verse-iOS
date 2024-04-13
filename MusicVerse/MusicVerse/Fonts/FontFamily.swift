@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit.UIFont
 
 public enum FontName: String {
   case bold = "YsabeauOffice-Bold"
@@ -13,6 +14,13 @@ public enum FontName: String {
   case light = "YsabeauOffice-Light"
   case medium = "YsabeauOffice-Medium"
   case regular = "YsabeauOffice-Regular"
+  
+  func font(by size: CGFloat) -> UIFont {
+    guard let font = UIFont(name: rawValue, size: size) else {
+      fatalError("unknown font")
+    }
+    return font
+  }
 }
 
 public enum FontStyle {

@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct MusicVerseApp: App {
   
+  @StateObject private var appRootManager = AppRootManager()
+  
   init() {
     do {
       try Font.registerModuleFonts()
@@ -19,7 +21,16 @@ struct MusicVerseApp: App {
   }
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      Group {
+        switch appRootManager.currentRoot {
+        case .onboarding:
+          ContentView()
+        case .main:
+          AudioPlayerRepresentable()
+            .ignoresSafeArea()
+        }
+      }
+      .environmentObject(appRootManager)
     }
   }
 }

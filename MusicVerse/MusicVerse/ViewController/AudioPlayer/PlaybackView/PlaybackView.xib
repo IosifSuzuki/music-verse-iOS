@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlaybackView" customModule="MusicVerse" customModuleProvider="target">
+            <connections>
+                <outlet property="backwardButton" destination="Wuj-2Y-SgL" id="TNH-gQ-CwH"/>
+                <outlet property="forwardButton" destination="msm-LN-8jN" id="nTM-Be-Jw6"/>
+                <outlet property="playPauseButton" destination="MsG-34-x4f" id="ha2-tb-4r9"/>
+                <outlet property="playerSlider" destination="oeV-dn-IqI" id="0AA-Dn-aPE"/>
+                <outlet property="playingTimeLabel" destination="ydh-0F-fYo" id="kA9-jg-CZ2"/>
+                <outlet property="remainingTimeLabel" destination="7hg-gI-xDg" id="xie-Rc-Fn5"/>
+                <outlet property="titleLabel" destination="nXk-KN-bzm" id="SIj-4g-HUi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="230"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="xTu-A2-FNy">
+                    <rect key="frame" x="16" y="16" width="361" height="198"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXk-KN-bzm">
+                            <rect key="frame" x="160" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="subtitle"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-ui-Hub">
+                            <rect key="frame" x="0.0" y="32.333333333333336" width="361" height="20.333333333333336"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-0F-fYo" userLabel="Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="subtitle"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <slider opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oeV-dn-IqI" customClass="PlayerSlider" customModule="MusicVerse" customModuleProvider="target">
+                                    <rect key="frame" x="56.333333333333314" y="0.0" width="257.33333333333337" height="21.333333333333332"/>
+                                    <color key="minimumTrackTintColor" name="title"/>
+                                </slider>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hg-gI-xDg">
+                                    <rect key="frame" x="319.66666666666669" y="0.0" width="41.333333333333314" height="20.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" name="subtitle"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XpJ-3I-RL3">
+                            <rect key="frame" x="108.66666666666669" y="64.666666666666671" width="144" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wuj-2Y-SgL">
+                                    <rect key="frame" x="0.0" y="4" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Wuj-2Y-SgL" secondAttribute="height" multiplier="1:1" id="tcv-FH-H5a"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="tintColor" name="subtitle"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="gobackward.15" catalog="system"/>
+                                    <connections>
+                                        <action selector="backwardTapped:" destination="-1" eventType="touchUpInside" id="Ati-5f-DQ8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsG-34-x4f">
+                                    <rect key="frame" x="51.999999999999986" y="0.0" width="40" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="MsG-34-x4f" secondAttribute="height" multiplier="1:1" id="xFV-Aw-lRw"/>
+                                    </constraints>
+                                    <color key="tintColor" name="subtitle"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <connections>
+                                        <action selector="playPauseTapped:" destination="-1" eventType="touchUpInside" id="DgF-1i-nHt"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msm-LN-8jN">
+                                    <rect key="frame" x="111.99999999999999" y="4" width="32.000000000000014" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="msm-LN-8jN" secondAttribute="height" multiplier="1:1" id="59F-fg-Bca"/>
+                                    </constraints>
+                                    <color key="tintColor" name="subtitle"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="goforward.15" catalog="system"/>
+                                    <connections>
+                                        <action selector="forwardTapped:" destination="-1" eventType="touchUpInside" id="n4w-vh-C7e"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="MsG-34-x4f" firstAttribute="height" secondItem="XpJ-3I-RL3" secondAttribute="height" id="PMC-7I-mFa"/>
+                                <constraint firstAttribute="height" constant="40" id="bZb-fW-vW0"/>
+                                <constraint firstItem="Wuj-2Y-SgL" firstAttribute="height" secondItem="XpJ-3I-RL3" secondAttribute="height" multiplier="0.8" id="caH-H5-Z0B"/>
+                                <constraint firstItem="msm-LN-8jN" firstAttribute="height" secondItem="XpJ-3I-RL3" secondAttribute="height" multiplier="0.8" id="wh9-bK-9fq"/>
+                            </constraints>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5HB-qJ-UtY">
+                            <rect key="frame" x="0.0" y="116.66666666666666" width="361" height="81.333333333333343"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="dIQ-ui-Hub" firstAttribute="width" secondItem="xTu-A2-FNy" secondAttribute="width" id="A9m-47-DKf"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xTu-A2-FNy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="0hb-ZT-vmZ"/>
+                <constraint firstAttribute="bottomMargin" secondItem="xTu-A2-FNy" secondAttribute="bottom" id="DqI-Bh-gl8"/>
+                <constraint firstItem="xTu-A2-FNy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" id="Yd6-HM-OXh"/>
+                <constraint firstAttribute="trailingMargin" secondItem="xTu-A2-FNy" secondAttribute="trailing" id="lkV-uf-WGH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+            <point key="canvasLocation" x="93.89312977099236" y="-199.29577464788733"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gobackward.15" catalog="system" width="119" height="128"/>
+        <image name="goforward.15" catalog="system" width="119" height="128"/>
+        <namedColor name="subtitle">
+            <color red="0.23499999940395355" green="0.23499999940395355" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="title">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

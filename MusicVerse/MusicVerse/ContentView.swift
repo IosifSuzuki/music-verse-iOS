@@ -28,6 +28,8 @@ struct ContentView: View {
     ),
   ]
   
+  @EnvironmentObject private var appRootManager: AppRootManager
+  
   var body: some View {
     ZStack {
       Asset.Colors.background.swiftUIColor
@@ -41,7 +43,7 @@ struct ContentView: View {
           }
           .tabViewStyle(.page)
           Button {
-            //TODO
+            appRootManager.currentRoot = .main
           } label: {
             Text(L10n.continue)
               .appFont(family: .app, style: .medium, size: 20)
@@ -57,7 +59,7 @@ struct ContentView: View {
         .toolbar(content: {
           ToolbarItem(placement: .navigationBarTrailing) {
             Button(L10n.skip) {
-              
+              appRootManager.currentRoot = .main
             }
             .foregroundColor(Asset.Colors.title.swiftUIColor)
           }
