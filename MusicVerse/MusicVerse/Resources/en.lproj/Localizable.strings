@@ -8,6 +8,7 @@
 
 "Continue" = "Continue";
 "Skip" = "Skip";
+"Finish" = "Finish";
 
 "OnboardingPage.firstPage.title" = "Powerfull equlizer";
 "OnboardingPage.firstPage.subtitle" = "You can personalize the sound music for you";
@@ -20,3 +21,7 @@
 
 "OnboardingPage.fourthPage.title" = "Audio Visualizer";
 "OnboardingPage.fourthPage.subtitle" = "Audio will be rendered in various waveforms";
+
+"HomeView.playlists.title" = "Playlists";
+"HomeView.folders.title" = "Folders";
+"HomeView.settings.title" = "Settings";

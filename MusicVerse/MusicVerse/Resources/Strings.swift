@@ -15,8 +15,24 @@ public enum L10n {
   /// 
   ///   Created by Bogdan Petkanitch on 29.06.2023.
   public static let `continue` = L10n.tr("Localizable", "Continue", fallback: "Continue")
+  /// Finish
+  public static let finish = L10n.tr("Localizable", "Finish", fallback: "Finish")
   /// Skip
   public static let skip = L10n.tr("Localizable", "Skip", fallback: "Skip")
+  public enum HomeView {
+    public enum Folders {
+      /// Folders
+      public static let title = L10n.tr("Localizable", "HomeView.folders.title", fallback: "Folders")
+    }
+    public enum Playlists {
+      /// Playlists
+      public static let title = L10n.tr("Localizable", "HomeView.playlists.title", fallback: "Playlists")
+    }
+    public enum Settings {
+      /// Settings
+      public static let title = L10n.tr("Localizable", "HomeView.settings.title", fallback: "Settings")
+    }
+  }
   public enum OnboardingPage {
     public enum FirstPage {
       /// You can personalize the sound music for you

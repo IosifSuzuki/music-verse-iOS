@@ -46,6 +46,10 @@
 		848447192BCAA90B00066CB8 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848447182BCAA90B00066CB8 /* TimeFormatter.swift */; };
 		8484471C2BCB0EB600066CB8 /* PlayerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484471B2BCB0EB600066CB8 /* PlayerStatus.swift */; };
 		8484471E2BCB156E00066CB8 /* PaletteColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484471D2BCB156E00066CB8 /* PaletteColor.swift */; };
+		848447222BCB31AB00066CB8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848447212BCB31AB00066CB8 /* HomeView.swift */; };
+		848447262BCC58A400066CB8 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848447252BCC58A400066CB8 /* Storage.swift */; };
+		848447282BCC60A900066CB8 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848447272BCC60A900066CB8 /* UserDefaults+Extension.swift */; };
+		8484472A2BCC617400066CB8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848447292BCC617400066CB8 /* OnboardingViewModel.swift */; };
 		84DB78742BC88E1100EF7503 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB78732BC88E1100EF7503 /* AudioPlayerViewModel.swift */; };
 		84DB78762BC88EA700EF7503 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84DB78752BC88EA700EF7503 /* test.mp3 */; };
 		84DB787B2BC8959300EF7503 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB787A2BC8959300EF7503 /* BaseViewModel.swift */; };
@@ -93,6 +97,10 @@
 		848447182BCAA90B00066CB8 /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
 		8484471B2BCB0EB600066CB8 /* PlayerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatus.swift; sourceTree = "<group>"; };
 		8484471D2BCB156E00066CB8 /* PaletteColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteColor.swift; sourceTree = "<group>"; };
+		848447212BCB31AB00066CB8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		848447252BCC58A400066CB8 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		848447272BCC60A900066CB8 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		848447292BCC617400066CB8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		848E9FA52BC1BD90005FD9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DB78732BC88E1100EF7503 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 		84DB78752BC88EA700EF7503 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
@@ -205,13 +213,13 @@
 			path = ViewModifier;
 			sourceTree = "<group>";
 		};
-		846A74322B9E3AA300546664 /* ViewController */ = {
+		846A74322B9E3AA300546664 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				846A74352B9E3D1700546664 /* AudioPlayer */,
 			);
-			name = ViewController;
-			path = ../ViewController;
+			name = Modules;
+			path = ../Modules;
 			sourceTree = "<group>";
 		};
 		846A74352B9E3D1700546664 /* AudioPlayer */ = {
@@ -268,6 +276,7 @@
 				846A74492B9E53D600546664 /* UIStoryboard+Extension.swift */,
 				846A744D2B9EFADD00546664 /* UIColor+Extension.swift */,
 				8484470B2BCA8CEE00066CB8 /* UIImage+Extension.swift */,
+				848447272BCC60A900066CB8 /* UserDefaults+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 		8484470F2BCA9AA200066CB8 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
+				848447242BCC588600066CB8 /* PropertyWrapper */,
 				848447102BCA9C1800066CB8 /* Error */,
 				8484470D2BCA9A9F00066CB8 /* AudioPreloadInfo.swift */,
 				848447132BCA9DA500066CB8 /* Alert.swift */,
@@ -312,6 +322,7 @@
 		8484471F2BCB2D3100066CB8 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				848447232BCB31AF00066CB8 /* Home */,
 				8459C84A2A4C5F1A00B82CE8 /* MusicVerseApp.swift */,
 				848447202BCB2D5600066CB8 /* Onboarding */,
 				8459C8832A4D79CC00B82CE8 /* ViewModifier */,
@@ -324,14 +335,31 @@
 			isa = PBXGroup;
 			children = (
 				8459C84C2A4C5F1A00B82CE8 /* OnboardingView.swift */,
+				848447292BCC617400066CB8 /* OnboardingViewModel.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		848447232BCB31AF00066CB8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				848447212BCB31AB00066CB8 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		848447242BCC588600066CB8 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				848447252BCC58A400066CB8 /* Storage.swift */,
+			);
+			path = PropertyWrapper;
 			sourceTree = "<group>";
 		};
 		84DB78772BC8957100EF7503 /* UIKIt */ = {
 			isa = PBXGroup;
 			children = (
-				846A74322B9E3AA300546664 /* ViewController */,
+				846A74322B9E3AA300546664 /* Modules */,
 				846A74412B9E458D00546664 /* View */,
 				84DB78792BC8957F00EF7503 /* ViewModel */,
 				84DB78782BC8957700EF7503 /* ViewController */,
@@ -467,13 +495,17 @@
 				8459C8852A4D79E100B82CE8 /* AppFont.swift in Sources */,
 				8459C87F2A4D768E00B82CE8 /* Font.swift in Sources */,
 				8484471C2BCB0EB600066CB8 /* PlayerStatus.swift in Sources */,
+				8484472A2BCC617400066CB8 /* OnboardingViewModel.swift in Sources */,
 				846A74482B9E52EF00546664 /* AudioPlayerRepresentable.swift in Sources */,
 				848447192BCAA90B00066CB8 /* TimeFormatter.swift in Sources */,
 				8484470C2BCA8CEE00066CB8 /* UIImage+Extension.swift in Sources */,
 				846A744A2B9E53D600546664 /* UIStoryboard+Extension.swift in Sources */,
 				846A74432B9E45A100546664 /* XibView.swift in Sources */,
+				848447282BCC60A900066CB8 /* UserDefaults+Extension.swift in Sources */,
 				8459C8702A4D74FD00B82CE8 /* Assets.swift in Sources */,
 				8459C8822A4D786C00B82CE8 /* FontFamily.swift in Sources */,
+				848447262BCC58A400066CB8 /* Storage.swift in Sources */,
+				848447222BCB31AB00066CB8 /* HomeView.swift in Sources */,
 				846A74462B9E49A900546664 /* UIView+Extension.swift in Sources */,
 				84DB78742BC88E1100EF7503 /* AudioPlayerViewModel.swift in Sources */,
 				8484470A2BCA8B2000066CB8 /* PlayerSlider.swift in Sources */,

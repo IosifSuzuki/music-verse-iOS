@@ -10,9 +10,14 @@ import SwiftUI
 @main
 struct MusicVerseApp: App {
   
-  @StateObject private var appRootManager = AppRootManager()
+  @ObservedObject var appRootManager: AppRootManager
+  let onboardingViewModel: OnboardingViewModel
   
   init() {
+    let appRootManager = AppRootManager()
+    self.onboardingViewModel = OnboardingViewModel(appRootManager: appRootManager)
+    self.appRootManager = appRootManager
+
     do {
       try Font.registerModuleFonts()
     } catch {
@@ -24,10 +29,9 @@ struct MusicVerseApp: App {
       Group {
         switch appRootManager.currentRoot {
         case .onboarding:
-          OnboardingView()
-        case .main:
-          AudioPlayerRepresentable()
-            .ignoresSafeArea()
+          OnboardingView(viewModel: onboardingViewModel)
+        case .home:
+          HomeView()
         }
       }
       .environmentObject(appRootManager)

@@ -9,26 +9,14 @@ import SwiftUI
 
 struct OnboardingView: View {
   
-  var viewModels: [OnboardingPageViewModel] = [
-    .init(
-      title: L10n.OnboardingPage.FirstPage.title,
-      subtitle: L10n.OnboardingPage.FirstPage.subtitle
-    ),
-    .init(
-      title: L10n.OnboardingPage.SecondPage.title,
-      subtitle: L10n.OnboardingPage.SecondPage.subtitle
-    ),
-    .init(
-      title: L10n.OnboardingPage.ThirdPage.title,
-      subtitle: L10n.OnboardingPage.ThirdPage.subtitle
-    ),
-    .init(
-      title: L10n.OnboardingPage.FourthPage.title,
-      subtitle: L10n.OnboardingPage.FourthPage.subtitle
-    ),
-  ]
+  @ObservedObject var viewModel: OnboardingViewModel
   
   @EnvironmentObject private var appRootManager: AppRootManager
+  @State var selectedTab: Int = .zero
+  
+  init(viewModel: OnboardingViewModel) {
+    self.viewModel = viewModel
+  }
   
   var body: some View {
     ZStack {
@@ -36,16 +24,16 @@ struct OnboardingView: View {
         .ignoresSafeArea()
       NavigationView {
         VStack {
-          TabView {
-            ForEach(0..<viewModels.count, id: \.self) { idx in
-              OnboardingPageView(viewModel: viewModels[idx])
+          TabView(selection: $viewModel.currentPage) {
+            ForEach(viewModel.dataSource.indices, id: \.self) { idx in
+              OnboardingPageView(viewModel: viewModel.dataSource[idx])
             }
           }
           .tabViewStyle(.page)
           Button {
-            appRootManager.currentRoot = .main
+            viewModel.continueBrowsing()
           } label: {
-            Text(L10n.continue)
+            Text(viewModel.bottomButtonTitle)
               .appFont(family: .app, style: .medium, size: 20)
               .foregroundColor(Asset.Colors.title.swiftUIColor)
               .padding(.init(top: 10, leading: 8, bottom: 10, trailing: 10))
@@ -58,8 +46,8 @@ struct OnboardingView: View {
         .padding(.vertical)
         .toolbar(content: {
           ToolbarItem(placement: .navigationBarTrailing) {
-            Button(L10n.skip) {
-              appRootManager.currentRoot = .main
+            Button(viewModel.rightButtonTitle) {
+              viewModel.finishOnboarding()
             }
             .foregroundColor(Asset.Colors.title.swiftUIColor)
           }
@@ -71,6 +59,8 @@ struct OnboardingView: View {
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    OnboardingView()
+    let appRootManager = AppRootManager()
+    let viewModel = OnboardingViewModel(appRootManager: appRootManager)
+    return OnboardingView(viewModel: viewModel)
   }
 }

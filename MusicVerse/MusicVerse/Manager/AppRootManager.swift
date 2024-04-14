@@ -8,10 +8,23 @@
 import Foundation
 
 final class AppRootManager: ObservableObject {
-  @Published var currentRoot: eAppRoots = .onboarding
+  @Published private(set) var currentRoot: AppRoot
   
-  enum eAppRoots {
+  init() {
+    currentRoot = if UserDefaults.showOnboarding {
+      .onboarding
+    } else {
+      .home
+    }
+  }
+  
+  func finishOnboarding() {
+    currentRoot = .home
+    UserDefaults.showOnboarding = false
+  }
+  
+  enum AppRoot {
     case onboarding
-    case main
+    case home
   }
 }
