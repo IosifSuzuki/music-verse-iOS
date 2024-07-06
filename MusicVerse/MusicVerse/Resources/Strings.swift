@@ -17,6 +17,8 @@ public enum L10n {
   public static let `continue` = L10n.tr("Localizable", "Continue", fallback: "Continue")
   /// Finish
   public static let finish = L10n.tr("Localizable", "Finish", fallback: "Finish")
+  /// General
+  public static let general = L10n.tr("Localizable", "General", fallback: "General")
   /// Skip
   public static let skip = L10n.tr("Localizable", "Skip", fallback: "Skip")
   public enum HomeView {
@@ -57,6 +59,24 @@ public enum L10n {
       public static let subtitle = L10n.tr("Localizable", "OnboardingPage.thirdPage.subtitle", fallback: "You could group music by playlist")
       /// Grouping music
       public static let title = L10n.tr("Localizable", "OnboardingPage.thirdPage.title", fallback: "Grouping music")
+    }
+  }
+  public enum Settings {
+    public enum BuildDate {
+      /// Date
+      public static let title = L10n.tr("Localizable", "Settings.buildDate.title", fallback: "Date")
+    }
+    public enum BuildInfo {
+      /// Build info
+      public static let title = L10n.tr("Localizable", "Settings.buildInfo.title", fallback: "Build info")
+    }
+    public enum BuildNumber {
+      /// Number
+      public static let title = L10n.tr("Localizable", "Settings.buildNumber.title", fallback: "Number")
+    }
+    public enum BuildVersion {
+      /// Version
+      public static let title = L10n.tr("Localizable", "Settings.buildVersion.title", fallback: "Version")
     }
   }
 }

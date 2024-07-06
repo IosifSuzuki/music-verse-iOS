@@ -9,6 +9,7 @@
 "Continue" = "Continue";
 "Skip" = "Skip";
 "Finish" = "Finish";
+"General" = "General";
 
 "OnboardingPage.firstPage.title" = "Powerfull equlizer";
 "OnboardingPage.firstPage.subtitle" = "You can personalize the sound music for you";
@@ -25,3 +26,8 @@
 "HomeView.playlists.title" = "Playlists";
 "HomeView.folders.title" = "Folders";
 "HomeView.settings.title" = "Settings";
+
+"Settings.buildInfo.title" = "Build info";
+"Settings.buildVersion.title" = "Version";
+"Settings.buildNumber.title" = "Number";
+"Settings.buildDate.title" = "Date";

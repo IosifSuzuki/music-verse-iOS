@@ -50,6 +50,12 @@
 		848447262BCC58A400066CB8 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848447252BCC58A400066CB8 /* Storage.swift */; };
 		848447282BCC60A900066CB8 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848447272BCC60A900066CB8 /* UserDefaults+Extension.swift */; };
 		8484472A2BCC617400066CB8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848447292BCC617400066CB8 /* OnboardingViewModel.swift */; };
+		848F2CE82C39650300414D64 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F2CE72C39650300414D64 /* SettingsView.swift */; };
+		848F2CEA2C39651700414D64 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F2CE92C39651700414D64 /* SettingsViewModel.swift */; };
+		848F2CED2C39889500414D64 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F2CEC2C39889500414D64 /* AppInfo.swift */; };
+		848F2CEF2C39CBAE00414D64 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F2CEE2C39CBAE00414D64 /* Date+Extension.swift */; };
+		848F2CF22C39DF4000414D64 /* SettingsRowLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F2CF12C39DF4000414D64 /* SettingsRowLabelView.swift */; };
+		848F2CF52C39E48600414D64 /* SettingsRowLabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848F2CF42C39E48600414D64 /* SettingsRowLabelModel.swift */; };
 		84DB78742BC88E1100EF7503 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB78732BC88E1100EF7503 /* AudioPlayerViewModel.swift */; };
 		84DB78762BC88EA700EF7503 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84DB78752BC88EA700EF7503 /* test.mp3 */; };
 		84DB787B2BC8959300EF7503 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DB787A2BC8959300EF7503 /* BaseViewModel.swift */; };
@@ -102,6 +108,12 @@
 		848447272BCC60A900066CB8 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		848447292BCC617400066CB8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		848E9FA52BC1BD90005FD9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848F2CE72C39650300414D64 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		848F2CE92C39651700414D64 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		848F2CEC2C39889500414D64 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		848F2CEE2C39CBAE00414D64 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		848F2CF12C39DF4000414D64 /* SettingsRowLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowLabelView.swift; sourceTree = "<group>"; };
+		848F2CF42C39E48600414D64 /* SettingsRowLabelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowLabelModel.swift; sourceTree = "<group>"; };
 		84DB78732BC88E1100EF7503 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 		84DB78752BC88EA700EF7503 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		84DB787A2BC8959300EF7503 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
@@ -277,6 +289,7 @@
 				846A744D2B9EFADD00546664 /* UIColor+Extension.swift */,
 				8484470B2BCA8CEE00066CB8 /* UIImage+Extension.swift */,
 				848447272BCC60A900066CB8 /* UserDefaults+Extension.swift */,
+				848F2CEE2C39CBAE00414D64 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,6 +303,7 @@
 				848447132BCA9DA500066CB8 /* Alert.swift */,
 				848447152BCAA66500066CB8 /* Audio.swift */,
 				8484471B2BCB0EB600066CB8 /* PlayerStatus.swift */,
+				848F2CEC2C39889500414D64 /* AppInfo.swift */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -322,6 +336,7 @@
 		8484471F2BCB2D3100066CB8 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				848F2CE62C39643C00414D64 /* Settings */,
 				848447232BCB31AF00066CB8 /* Home */,
 				8459C84A2A4C5F1A00B82CE8 /* MusicVerseApp.swift */,
 				848447202BCB2D5600066CB8 /* Onboarding */,
@@ -354,6 +369,25 @@
 				848447252BCC58A400066CB8 /* Storage.swift */,
 			);
 			path = PropertyWrapper;
+			sourceTree = "<group>";
+		};
+		848F2CE62C39643C00414D64 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				848F2CF02C39DF1E00414D64 /* SettingsRow */,
+				848F2CE72C39650300414D64 /* SettingsView.swift */,
+				848F2CE92C39651700414D64 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		848F2CF02C39DF1E00414D64 /* SettingsRow */ = {
+			isa = PBXGroup;
+			children = (
+				848F2CF12C39DF4000414D64 /* SettingsRowLabelView.swift */,
+				848F2CF42C39E48600414D64 /* SettingsRowLabelModel.swift */,
+			);
+			path = SettingsRow;
 			sourceTree = "<group>";
 		};
 		84DB78772BC8957100EF7503 /* UIKIt */ = {
@@ -394,6 +428,7 @@
 				8459C8442A4C5F1A00B82CE8 /* Frameworks */,
 				8459C8452A4C5F1A00B82CE8 /* Resources */,
 				8459C8662A4C7FBA00B82CE8 /* Run Swiftgen */,
+				848F2CEB2C39810500414D64 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -479,6 +514,23 @@
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftgen >/dev/null; then\n  swiftgen config run --config ${PROJECT_DIR}/swiftgen.yml\nelse\n  echo \"warning: SwiftGen not installed\"\nfi \n";
 		};
+		848F2CEB2C39810500414D64 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n${SRCROOT}/MusicVerse/Resources/Scripts/pre_build.sh\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -486,6 +538,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848F2CE82C39650300414D64 /* SettingsView.swift in Sources */,
 				8459C85C2A4C61D100B82CE8 /* OnboardingPageViewModel.swift in Sources */,
 				84DB787B2BC8959300EF7503 /* BaseViewModel.swift in Sources */,
 				8459C85A2A4C60B100B82CE8 /* OnboardingPageView.swift in Sources */,
@@ -502,6 +555,7 @@
 				846A744A2B9E53D600546664 /* UIStoryboard+Extension.swift in Sources */,
 				846A74432B9E45A100546664 /* XibView.swift in Sources */,
 				848447282BCC60A900066CB8 /* UserDefaults+Extension.swift in Sources */,
+				848F2CEF2C39CBAE00414D64 /* Date+Extension.swift in Sources */,
 				8459C8702A4D74FD00B82CE8 /* Assets.swift in Sources */,
 				8459C8822A4D786C00B82CE8 /* FontFamily.swift in Sources */,
 				848447262BCC58A400066CB8 /* Storage.swift in Sources */,
@@ -510,6 +564,9 @@
 				84DB78742BC88E1100EF7503 /* AudioPlayerViewModel.swift in Sources */,
 				8484470A2BCA8B2000066CB8 /* PlayerSlider.swift in Sources */,
 				848447122BCA9C2800066CB8 /* AudioPlayerError.swift in Sources */,
+				848F2CF52C39E48600414D64 /* SettingsRowLabelModel.swift in Sources */,
+				848F2CF22C39DF4000414D64 /* SettingsRowLabelView.swift in Sources */,
+				848F2CED2C39889500414D64 /* AppInfo.swift in Sources */,
 				848447162BCAA66500066CB8 /* Audio.swift in Sources */,
 				848447142BCA9DA500066CB8 /* Alert.swift in Sources */,
 				846A743E2B9E42D600546664 /* PlaybackView.swift in Sources */,
@@ -520,6 +577,7 @@
 				8484470E2BCA9A9F00066CB8 /* AudioPreloadInfo.swift in Sources */,
 				8459C8712A4D74FD00B82CE8 /* Strings.swift in Sources */,
 				8484471E2BCB156E00066CB8 /* PaletteColor.swift in Sources */,
+				848F2CEA2C39651700414D64 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

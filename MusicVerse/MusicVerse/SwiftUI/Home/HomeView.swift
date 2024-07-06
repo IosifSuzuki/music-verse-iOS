@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+  let settingsViewModel = SettingsViewModel()
   var body: some View {
     TabView {
       NavigationStack {
@@ -24,10 +25,12 @@ struct HomeView: View {
         .tabItem {
           Label(L10n.HomeView.Folders.title, systemImage: "folder")
         }
-      Text("Settings content")
-        .tabItem {
-          Label(L10n.HomeView.Settings.title, systemImage: "gearshape")
-        }
+      NavigationStack {
+        SettingsView(viewModel: settingsViewModel)
+      }
+      .tabItem {
+        Label(L10n.HomeView.Settings.title, systemImage: "gearshape")
+      }
     }.tint(Asset.Colors.focus.swiftUIColor)
   }
 }
